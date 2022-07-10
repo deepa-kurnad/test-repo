@@ -1,0 +1,23 @@
+{
+  "name": "test-repo",
+  "version": "0.0.0-development",
+  "description": "<<<<<<< HEAD\r Just testing\r =======\r change1\r >>>>>>> 08449784000f3b52075c279aa37f1fa7e86bc593",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deepa-kurnad/test-repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepa-kurnad/test-repo/issues"
+  },
+  "homepage": "https://github.com/deepa-kurnad/test-repo#readme",
+  "devDependencies": {
+    "semantic-release": "^19.0.3"
+  }
+}
