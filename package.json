@@ -19,5 +19,8 @@
   "homepage": "https://github.com/deepa-kurnad/test-repo#readme",
   "devDependencies": {
     "semantic-release": "^19.0.3"
+  },
+  "release": {
+    "branches": ["master", "next","main"]
   }
 }
