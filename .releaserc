@@ -12,6 +12,7 @@
       }
     ],
     ["@semantic-release/npm", {
+        "NPM_TOKEN" :"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",
         "npmPublish": false
       }],
     [
