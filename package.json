@@ -1,7 +1,6 @@
 {
   "name": "test-repo",
   "version": "0.0.0-development",
-  "NPM_TOKEN": "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",
   "description": "<<<<<<< HEAD\r Just testing\r =======\r change1\r >>>>>>> 08449784000f3b52075c279aa37f1fa7e86bc593",
   "main": "index.js",
   "scripts": {
