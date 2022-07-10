@@ -3,22 +3,11 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
+    "@semantic-release/gitlab",
     [
-      "@semantic-release/changelog",
-      {
-        "changelogFile": "CHANGELOG.md"
+      "@semantic-release/exec", {
+        "successCmd": "echo VERSION=${nextRelease.version}"
       }
-    ],
-    [
-        "@semantic-release/npm", {
-        "npmPublish": false
-    }],
-    [
-      "@semantic-release/git",
-      {
-        "assets": ["CHANGELOG.md"]
-      }
-    ],
-    "@semantic-release/github"
+    ]
   ]
 }
