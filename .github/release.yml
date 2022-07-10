@@ -1,0 +1,36 @@
+---
+name: prerelease
+on:
+  push:
+    branches:
+      - main
+permissions: write-all
+
+jobs:
+  alpha:
+    name: ALPHA
+    environment: ALPHA
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: |
+          npm install @semantic-release/git -D
+          npm install @semantic-release/changelog -D
+
+      - name: Release
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        run: npx semantic-release
+
+  
