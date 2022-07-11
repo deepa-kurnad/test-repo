@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/deepa-kurnad/test-repo/compare/v1.5.0...v1.5.1) (2022-07-11)
+
+
+### Bug Fixes
+
+* updated changes ([7441fd1](https://github.com/deepa-kurnad/test-repo/commit/7441fd148a032cd837679b330d98a95789d0cd7d))
+
 # [1.5.0](https://github.com/deepa-kurnad/test-repo/compare/v1.4.0...v1.5.0) (2022-07-11)
 
 
